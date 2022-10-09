@@ -1,0 +1,12 @@
+version: '2.10'
+services:
+  jekyll:
+    image: docker-jekyll:0.0.3
+    volumes:
+      - ./site:/site
+  nginx:
+    image: nginx:latest
+    ports:
+      - "8080:80"
+    volumes:
+      - ./site/_site:/usr/share/nginx/html
