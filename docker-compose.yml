@@ -1,7 +1,7 @@
 version: '2.10'
 services:
   jekyll:
-    image: docker-jekyll:0.0.3
+    image: pengloo53/docker-jekyll:0.0.3
     volumes:
       - ./site:/site
   nginx:
